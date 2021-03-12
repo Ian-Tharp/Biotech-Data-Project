@@ -1,9 +1,8 @@
 #include <iostream>
 #include <fstream>
-using namespace std;
 
 int main()
 {
-
+    std::cout << "Init" << std::endl;
     return 0;
 }
