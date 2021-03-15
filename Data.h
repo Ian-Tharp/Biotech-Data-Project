@@ -10,7 +10,7 @@ class Data
         //Default Constructor
         Data();
         //Parameterized Constructor
-        Data(float fraction, char id, char type, string fullid, int imagenumber);
+        Data(float fraction, char id, char type, string fullid, int imagenumber, float beadsavg);
         
         //Sets
         void SetDilution(float fraction);
@@ -18,12 +18,14 @@ class Data
         void SetHemoType(char type);
         void SetFullID(string fullid);
         void SetImageNumber(int imagenumber);
+        void SetBeadsAverage(float beadsavg);
         //Gets
         float GetDilutionFraction();
         char GetTubeID();
         char GetHemoType();
         string GetFullID();
         int GetImageNumber();
+        float GetBeadsAverage();
 
     private:
         float DilutionFraction;
@@ -31,4 +33,5 @@ class Data
         char HemoType;
         string FullID;
         int ImageNumber;
+        float BeadsAverage;
 };
